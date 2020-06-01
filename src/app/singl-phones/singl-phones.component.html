@@ -1,0 +1,119 @@
+<div class="container__discription">
+  <div class="container__title_img">
+    <img src='{{phones.imageTitle}}' alt="">
+  </div>
+  <div class="container__product">
+    <div class="container__model_text">
+      <h1>{{phones.name}}</h1>
+      <hr>
+      <p class="container__header_text">{{phones.text}}</p>
+    </div>
+
+    <div class="container__img_block">
+      <img class="container__mini_img" 
+        *ngFor="let item of phones.image" 
+        (click)="clickImg($event)" 
+        src="{{item}}"
+        alt="">
+    </div>
+
+  </div>
+</div>
+<div class="container__characteristic">
+  <div class="container__text_char">
+    <h3>Availability and Networks</h3>
+    <p><b>Availability</b></p>
+  </div>
+  <div class="container__text_char">
+    <h3>Battery</h3>
+    <p><b>Type</b>
+      Other ( mAH)
+      <b>Talk Time</b>
+      24 hours
+      <b>Standby time (max)</b>
+      336 hours
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3>Storage and Memory</h3>
+    <p> <b>RAM</b>
+      1000MB
+      <b>Internal Storage</b>
+      32000MB
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3>Connectivity</h3>
+    <p><b>Network Support</b>
+      WiFi
+      802.11 b/g/n
+      <b>Bluetooth</b>
+      Bluetooth 2.1
+      <b>Infrared</b>
+      ✘
+      <b>GPS</b>
+      ✓
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3>Android</h3>
+    <p><b>S Version</b>O
+      Android 3.0
+      <b>UI</b>
+      Honeycomb
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3>Size and Weight</h3>
+    <p>
+      <b>Dimensions</b>
+      249.1 mm (w)
+      167.8 mm (h)
+      12.9 mm (d)
+      <b>Weight</b>
+      708.0 grams
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3>Display</h3>
+    <p>
+      <b>Screen size</b>
+      10.1 inches
+      <b>Screen resolution</b>
+      WXGA (1200 x 800)
+      <b>Touch screen</b>
+      ✓
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3> Hardware</h3>
+    <p>
+      <b>CPU</b>
+      1 GHz Dual Core Tegra 2
+      <b>USB</b>
+      USB 2.0
+      <b>Audio / headphone jack</b>
+      3.5mm
+      <b>FM Radio</b>
+      ✘
+      <b>Accelerometer</b>
+      ✓
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3>Camera</h3>
+    <p>
+      <b>Primary</b>
+      5.0 megapixels
+      <b>Features</b>
+      Flash, Video
+    </p>
+  </div>
+  <div class="container__text_char">
+    <h3>Additional Features</h3>
+    <p>
+      Sensors: proximity, ambient light,
+      barometer, gyroscope
+    </p>
+  </div>
+</div>

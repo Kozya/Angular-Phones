@@ -1,0 +1,25 @@
+<div id="container">
+  <div id="container__search">
+    <p>Search:</p>
+    <input id="container__input" type="text" (input)='searchPhone($event)'>
+    <p>Sort by:
+      <select name="sort" id="container__select" (change)="sort($event)">
+        <option id="container__sort_new" value="1">Newest</option>
+        <option id="container__sort_alpabet" value="2">Alpabet</option>
+      </select>
+    </p>
+  </div>
+  <div id="container__list">
+
+    <div *ngFor="let item of phones">
+      <div class="container__list__phone">
+        <img class="container__list__img" src={{item.image}} alt="{{item.alt}}">
+        <div class="container__list__text">
+          <a class="container__list__data" [routerLink]=[item.name] href="#{{item.name}}">{{item.name}}</a>
+          <p class="container__list__info">{{item.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
